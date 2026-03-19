@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pratikum Minggu 3 - Layout</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body></body>
+</html>
+
+<!-- ── NAVBAR ─────────────────────── -->
+<nav class="navbar">
+  <div class="navbar__logo">
+    <span class="logo-icon">&#9670;</span>
+    <span class="logo-text">Portofolio Gilang Setiawan</span>
+  </div>
+
+  <ul class="navbar__links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <div class="navbar__cta">
+    <a href="#" class="btn-primary">Hire Me</a>
+  </div>
+</nav>
+
+<button id="dark-toggle" class="dark-btn">🌙 Dark Mode</button>
+
+<!-- ── HERO SECTION ────────────────── -->
+<section class="hero" id="home">
+  <div class="hero__content">
+    <span class="hero__badge">Available for Work</span>
+    <h1 class="hero__title">
+      Hi, Saya
+      <span class="highlight">Gilang Setiawan</span>
+      <br />
+      Web Developer
+    </h1>
+    <p class="hero__desc">
+      Saya membangun website yang cepat, respontif, dan tampak profesional, Mari buat sesuatu yang
+      luar biasa bersama.
+    </p>
+    <div class="hero__actions">
+      <a href="#portfolio" class="btn-primary">Lihat Portfolio</a>
+      <a href="#contact" class="btn-outline">Hubungi Saya</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── ABOUT ME ── -->
+<section class="about-section" id="about">
+  <div class="container">
+    <div class="about__header">
+      <h2>About Me</h2>
+    </div>
+
+    <div class="about__content">
+      <div class="about__image">
+        <img src="assets/images/glngstwn.jpeg" alt="Gilang Setiawan" />
+      </div>
+      <div class="about__text">
+        <h3>
+          Halo! saya
+          <span class="highlight">Gilang Setiawan</span>
+        </h3>
+        <p>
+          Seorang mahasiswa Sistem Informasi di Universitas Muhammadiyah Sumatera Utara yang fokus
+          pada pengembangan web dan inovasi teknologi. Saya berdedikasi untuk menciptakan solusi
+          digital yang bermanfaat dan selalu bersemangat dengan belajar hal-hal baru untuk
+          mengembangkan keterampilan saya.
+        </p>
+
+        <div class="about__me">
+          <div class="skills-list">
+            <div class="skill-item">
+              <span>📍</span>
+              <p>Medan</p>
+            </div>
+            <div class="skill-item">
+              <span>📅</span>
+              <p>28 April 2007</p>
+            </div>
+            <div class="skill-item">
+              <span>🎓</span>
+              <p>Mahasiswa</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ── SKILLS SECTION ──────────────── -->
+<section class="skills" id="about">
+  <div class="container">
+    <h2 class="section-title">Keahlian Saya</h2>
+    <p class="section-subtitle">Teknologi yang saya kuasai</p>
+
+    <div class="skills__grid">
+      <div class="skill-card">
+        <div class="skill-card__icon">&#128195;</div>
+        <h3>HTML5</h3>
+        <p>Semantic markup, aksesibilitas, dan struktur dokumen yang baik.</p>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-card__icon">&#127912;</div>
+        <h3>CSS3</h3>
+        <p>Flexbox, Grid, animasi, dan responsive design untuk semua layar.</p>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-card__icon">&#9889;</div>
+        <h3>JavaScript</h3>
+        <p>DOM manipulation, Fetch API, dan logika interaktif modern.</p>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-card__icon">&#128279;</div>
+        <h3>Git & GitHub</h3>
+        <p>Version control, branching, dan kolaborasi tim secara profesional.</p>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-card__icon">&#9881;</div>
+        <h3>React</h3>
+        <p>Component-based development dengan hooks dan state management.</p>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-card__icon">&#128640;</div>
+        <h3>Performance</h3>
+        <p>Optimasi loading, image compression, dan Core Web Vitals.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ──  PORTOFOLIO  ── -->
+<section class="portfolio-section" id="portfolio">
+  <h2 class="section-title">Project Saya</h2>
+  <div class="portfolio-grid">
+    <div class="portfolio-card">
+      <div class="portfolio-img-box"><img src="assets/images/Projek 1.png" alt="P1" /></div>
+      <div class="portfolio-info">
+        <h3>Dekstop App</h3>
+        <p>Aplikasi CRUD menggunakan Java NetBeans yang terintegrasi dengan database SQL.</p>
+      </div>
+    </div>
+    <div class="portfolio-card">
+      <div class="portfolio-img-box"><img src="assets/images/Projek 2.png" alt="P2" /></div>
+      <div class="portfolio-info">
+        <h3>Forum Login Sederhana</h3>
+        <p>Membuat sistem login sederhana menggunakan Python.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ── CONTACT SECTION ── -->
+<section id="contact" class="contact">
+  <div class="container">
+    <h2 class="section-title">Contact Me</h2>
+
+    <form class="contact-form" onsubmit="event.preventDefault()">
+      <input type="text" placeholder="Nama" required />
+      <input type="email" placeholder="Email" required />
+      <textarea placeholder="Pesan" required style="height: 150px; resize: none"></textarea>
+      <button type="submit">Kirim Pesan</button>
+    </form>
+
+    <!-- MEDIA SOSIAL -->
+    <div class="social-links">
+      <a href="https://wa.me/6281285683907" class="social-item" target="_blank">
+        <svg viewBox="0 0 24 24">
+          <path
+            d="M12.012 2c-5.508 0-9.987 4.479-9.987 9.987 0 1.763.459 3.42 1.263 4.86L2 22l5.343-1.401c1.392.759 2.979 1.188 4.669 1.188 5.508 0 9.987-4.479 9.987-9.987 0-5.508-4.479-9.987-9.987-9.987zm4.569 14.126c-.255.72-1.476 1.32-2.031 1.407-.51.081-1.17.153-1.899-.078-3.045-.966-5.043-4.053-5.196-4.257-.153-.204-1.242-1.653-1.242-3.153 0-1.5 1.218-1.575 1.41-1.74.192-.165.42-.21.555-.21h.42c.135 0 .315-.051.495.387.195.48.66 1.605.72 1.725.06.12.099.258.021.414-.078.156-.117.255-.234.39-.117.135-.246.3-.351.405-.12.12-.246.252-.105.492.141.24 1.122 1.848 2.4 2.982 1.278 1.134 2.349 1.485 2.619 1.62.27.135.426.114.585-.072.159-.186.684-.801.867-1.077.183-.276.366-.231.615-.141.249.09 1.575.741 1.845.873.27.132.45.195.51.303.06.108.06.621-.195 1.341z"
+          />
+        </svg>
+        <span>WhatsApp</span>
+      </a>
+      <a
+        href="https://www.instagram.com/gilaaangz._?igsh=MTh5bGRqNTZhNDVkYg=="
+        class="social-item"
+        target="_blank"
+      >
+        <svg viewBox="0 0 24 24">
+          <path
+            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.791-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.209-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+          />
+        </svg>
+        <span>Instagram</span>
+      </a>
+    </div>
+  </div>
+</section><section class="counter-section">
+  <h2>Berapa Kali Kamu Minum Air Hari Ini?</h2>
+  <div class="counter-container">
+    <button id="btn-kurang" class="counter-btn">−</button>
+    <span id="angka-counter">0</span>
+    <button id="btn-tambah" class="counter-btn">+</button>
+  </div>
+  <p id="counter-pesan">Yuk mulai minum air!</p>
+  
+<!-- ── FOOTER ──────────────────────── -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <span class="footer__brand">&#9670; Portofolio Gilang</span>
+      <p class="footer__copy">&copy; 2026 Gilang Setiawan.</p>
+      <div class="footer__links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
+
+<section class="form-section">
+  <h2>Hubungi Kami</h2>
+  <div class="form-container">
+    <input type="text" id="input-nama" placeholder="Nama lengkap" />
+    <input type="email" id="input-email" placeholder="Alamat email" />
+    <textarea id="input-pesan" placeholder="Pesan kamu..." rows="4"></textarea>
+    <button id="btn-kirim">Kirim Pesan</button>
+    <div id="form-feedback" class="feedback hidden"></div>
+  </div>
+</section>
+
+
